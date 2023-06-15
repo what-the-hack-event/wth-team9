@@ -10,6 +10,8 @@ jobs:
       with:
         # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
         creds: ${{ secrets.AZURESERVICEPRINCIPAL }}
+    - name: Checkout Template
+      uses: actions/checkout@master
     - name: Deploy Azure Resource Manager (ARM) Template
       uses: Azure/arm-deploy@v1.0.9
       with:
