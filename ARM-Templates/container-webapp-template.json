@@ -3,11 +3,11 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "webAppName": {
-            "defaultValue": "team9-devops-dev",
+            "defaultValue": "team9devops-dev",
             "type": "String"
         },
         "hostingPlanName": {
-            "defaultValue": "team9-devops-asp",
+            "defaultValue": "team9devops-asp",
             "type": "String"
         },
         "appInsightsLocation": {
@@ -15,7 +15,7 @@
             "type": "String"
         },
         "appInsightsName": {
-            "defaultValue": "team9-devops-ai",
+            "defaultValue": "team9devops-ai",
             "type": "String"
         },        
         "sku": {
@@ -23,11 +23,11 @@
             "type": "String"
         },
         "registryName": {
-            "defaultValue": "team9-devopsreg",
+            "defaultValue": "team9devopsreg",
             "type": "String"
         },
         "imageName": {
-            "defaultValue": "team9-devopsimage",
+            "defaultValue": "team9devopsimage",
             "type":"String"
         },
         "registryLocation": {
