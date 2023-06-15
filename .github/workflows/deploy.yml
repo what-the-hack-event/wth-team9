@@ -18,7 +18,7 @@ jobs:
         # Provide the scope of the deployment. Valid values are: 'resourcegroup', 'managementgroup', 'subscription'
         scope: subscription
         # Override the Subscription Id set by Azure Login.
-        subscriptionId: 69c46380-11fc-4928-8685-6308b12a57e2
+        #subscriptionId: 69c46380-11fc-4928-8685-6308b12a57e2
         # Specify the Id for the Management Group, only required for Management Group Deployments.
         # managementGroupId: # optional
         # Provide the target region, only required for management Group or Subscription deployments.
