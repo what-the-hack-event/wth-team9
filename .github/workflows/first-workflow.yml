@@ -1,6 +1,9 @@
 name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
-on: workflow_dispatch
+on:
+  issues:
+    types:
+      - opened
 jobs:
   Job1:
     runs-on: ubuntu-latest
