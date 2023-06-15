@@ -16,13 +16,13 @@ jobs:
       uses: Azure/arm-deploy@v1.0.9
       with:
         # Provide the scope of the deployment. Valid values are: 'resourcegroup', 'managementgroup', 'subscription'
-        scope: subscription
+        #scope: subscription
         # Override the Subscription Id set by Azure Login.
         #subscriptionId: 69c46380-11fc-4928-8685-6308b12a57e2
         # Specify the Id for the Management Group, only required for Management Group Deployments.
         # managementGroupId: # optional
         # Provide the target region, only required for management Group or Subscription deployments.
-        region: "South Central US"
+        #region: "South Central US"
         # Provide the name of a resource group, only required for resource Group deployments.
         resourceGroupName: ${{ vars.VARRESOURCEGROUP }}
         # Specify the path or URL to the Azure Resource Manager template.
