@@ -19,7 +19,7 @@ jobs:
     # What does the cow say?
         text: "optional, default is Ship it!!!!!"
     # Color of your cow
-        color:  white
+        color: white
    
   
 
