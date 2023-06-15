@@ -11,3 +11,5 @@ dotnet test
 
 
 test
+
+ok
