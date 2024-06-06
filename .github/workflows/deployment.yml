@@ -2,6 +2,10 @@ name: Deploy Bicep
 
 on: 
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment'
+        default: 'dev'
 
 jobs:
   deploy:
@@ -28,4 +32,4 @@ jobs:
       with:
         azcliversion: 2.61.0
         inlineScript: |
-          az deployment group create --resource-group wth-team9-rg --name Team9-Deployment --template-file ./InfrastructureAsCode/main.bicep
+          az deployment group create --resource-group wth-team9-rg --name Team9-Deployment --template-file ./InfrastructureAsCode/main.bicep --parameters environment=${{ github.event.inputs.environment }}
