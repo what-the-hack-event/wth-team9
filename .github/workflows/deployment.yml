@@ -26,6 +26,6 @@ jobs:
     - name: Deploy Bicep
       uses: azure/CLI@v1
       with:
-        azcliversion: 2.0.72
+        azcliversion: 2.61.0
         inlineScript: |
-          az deployment group create --name Team9-Deployment --resource-group wth-team9-rg --template-file ./InfrastructureAsCode/main.bicep
+          az deployment group create --resource-group wth-team9-rg --name Team9-Deployment --template-file ./InfrastructureAsCode/main.bicep
