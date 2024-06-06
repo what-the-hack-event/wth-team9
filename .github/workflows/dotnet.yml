@@ -39,7 +39,7 @@ jobs:
     
 
     - name: Publish .NET application
-      run: dotnet publish -o ./publish
+      run: dotnet publish ./Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj -o ./publish
       
     - name: Log in to Azure
       uses: azure/login@v1
