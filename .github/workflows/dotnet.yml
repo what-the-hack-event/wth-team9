@@ -47,7 +47,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
       
     - name: Build Docker image
-      run: docker build -t ${{ secrets.ACR_NAME }}.azurecr.io/yourappname:tag ./Application/src/RazorPagesTestSample/Dockerfile
+      run: docker build -t ${{ secrets.ACR_NAME }}.azurecr.io/yourappname:tag ./Application/src/RazorPagesTestSample/
       
     - name: Log in to Azure Container Registry
       run: |
