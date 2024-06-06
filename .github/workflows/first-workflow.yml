@@ -1,8 +1,8 @@
 name: First Workflow
 
-# This workflow runs manually
-on:
-  workflow_dispatch:
+on: # run this workflow on issue creation
+  issues:
+    types: [opened]
 
 jobs:
   job1:
