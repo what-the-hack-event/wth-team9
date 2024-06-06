@@ -32,4 +32,4 @@ jobs:
       with:
         azcliversion: 2.61.0
         inlineScript: |
-          az deployment group create --resource-group wth-team9-rg --name Team9-Deployment --template-file ./InfrastructureAsCode/main.bicep --parameters environment=${{ github.event.inputs.environment }}
+          az deployment group create --resource-group wth-team9-rg --template-file ./InfrastructureAsCode/main.bicep --parameters environment=${{ github.event.inputs.environment }}
